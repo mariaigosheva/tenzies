@@ -1,0 +1,76 @@
+/* Body and background */
+body {
+    background-color: #0B2434;
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main game container */
+main {
+    background-color: #F5F5F5;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 400px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Headings and text */
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1rem;
+    margin: 10px 0 20px;
+    color: #333;
+}
+
+/* Dice grid */
+.die-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+/* Dice faces */
+.die-face {
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    transition: transform 0.1s ease, background 0.2s;
+}
+
+.die-face:hover {
+    transform: scale(1.05);
+}
+
+/* Roll button */
+.roll-dice {
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #5035FF;
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.roll-dice:hover {
+    background-color: #3B27CC;
+}
